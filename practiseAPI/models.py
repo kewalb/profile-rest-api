@@ -5,3 +5,7 @@ class user(models.Model):
     name = models.CharField(max_length=50)
     age = models.IntegerField()
     occupation = models.CharField(max_length=255)
+
+
+    def __str__(self):
+        return self.name
